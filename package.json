@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
      "start":"node index.js",
+    "heroku-prebuild": "npm config set ignore-scripts true",
     "build": "rm -rf dist && tsc",
     "lint": "eslint --ext .ts ./",
     "ts-check": "tsc --noEmit -p  .",
